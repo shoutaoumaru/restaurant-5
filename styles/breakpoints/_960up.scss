@@ -1,0 +1,135 @@
+/******************************************************************
+
+Stylesheet: 960px以上のモニタで適用
+
+******************************************************************/
+.c-txt-lr {
+  font-size: 2.6rem;
+}
+
+.c-txt-md {
+  font-size: 1.2rem;
+  letter-spacing: 4px;
+  line-height: 2;
+  color: $cBlack;
+  font-family: 'Righteous', 'Noto Serif JP', cursive;
+
+}
+
+.c-txt-sm {
+  font-size: .9rem;
+  letter-spacing: 2px;
+  line-height: 2;
+  color: $cBlack;
+}
+
+.c-txt-xs {
+  font-size: .7rem;
+  letter-spacing: 2px;
+  line-height: 2;
+  color: $cSubBlack;
+}
+
+//#top 
+.p-top {
+  & .slide-mask {
+    & .border.top {
+      top: -20px;
+    }
+
+    & .border.left {
+      top: 10px;
+    }
+
+    & .border.right {
+      top: 10px;
+    }
+  }
+}
+
+//#about 
+.p-about {
+  &__desc {
+    bottom: -30vw;
+    width: 56%;
+  }
+}
+
+//#concept
+.p-concept {
+  .bg-line {
+    height: 440vh;
+  }
+
+  &__img {
+    top: 6vw;
+  }
+}
+
+//#menu
+.p-menu {
+  margin-bottom: 10vw;
+
+  &__img {
+    margin: -20vw -6vw 0 -6vw;
+
+  }
+
+  &__desc {
+    bottom: -60%;
+    right: -6vw;
+
+    &::after {
+      left: -9vw;
+    }
+
+    &::before {
+      top: 140px;
+      left: -9.7vw;
+      font-size: 22px;
+    }
+  }
+}
+
+//#information
+.p-info {
+
+  &__desc {
+    bottom: -72%;
+    left: 7.8vw;
+
+    &::before {
+      top: 140px;
+      left: 74.3vw;
+      font-size: 22px;
+    }
+  }
+
+  &__img {
+    margin: -16vw -6vw 0 -6vw;
+  }
+}
+
+//* *  * * * * * * * menu-page * * * * * * * * * * 
+.c-top {
+  &__tit {
+    font-size: 3rem;
+  }
+}
+
+//* * * * * * news-page * * * * * * *
+.c-news {
+  padding-top: 20vw;
+
+  &__title {
+    margin-bottom: 5vw !important;
+  }
+
+  &__list {
+    font-size: 1.5rem;
+
+    & a {
+      padding: 5vw 0 5vw 5vw;
+    }
+  }
+}

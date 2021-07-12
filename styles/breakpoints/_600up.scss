@@ -1,0 +1,230 @@
+/******************************************************************
+
+Stylesheet: 600px以上のモニタで適用
+
+******************************************************************/
+.c-txt-lr {
+  font-size: 1.8rem;
+  letter-spacing: 5px;
+  line-height: 2;
+  color: $cBlack;
+  font-family: 'Righteous', 'Noto Serif JP', cursive;
+}
+
+.c-txt-md {
+  font-size: 1.2rem;
+  letter-spacing: 4px;
+  line-height: 2;
+  color: $cBlack;
+  font-family: 'Righteous', 'Noto Serif JP', cursive;
+
+}
+
+.c-txt-sm {
+  font-size: .9rem;
+  letter-spacing: 2px;
+  line-height: 2;
+  color: $cBlack;
+}
+
+.c-txt-xs {
+  font-size: .7rem;
+  letter-spacing: 2px;
+  line-height: 2;
+  color: $cSubBlack;
+}
+
+.c-container {
+  padding: 0 14vw;
+}
+
+.header {
+  .sp-navbtn {
+    display: none;
+  }
+
+  & .logo {
+    margin-left: 10vw;
+  }
+}
+
+//#about
+.p-about {
+  position: relative;
+
+  &__img {
+    top: -3vw;
+    height: 50vh;
+
+    & img {
+      height: auto;
+    }
+  }
+
+  &__desc {
+    position: absolute;
+    bottom: -40vw;
+    right: 7.8vw;
+    background-color: #fff;
+    padding: 4vw;
+    z-index: 1000;
+  }
+}
+
+//#concept
+.p-concept {
+  &__img {
+    top: 17vw;
+    left: 9vw;
+    width: 45%;
+  }
+
+  &__title {
+    top: 100vw;
+
+    & p {
+      font-size: 4rem;
+    }
+  }
+
+  & .bg-line {
+    height: 680vw;
+    right: 60px;
+  }
+}
+
+//#story
+.p-story {
+  margin-top: 55vw;
+  font-size: 1.2rem;
+
+  &__photo02 {
+    top: -10vw;
+  }
+
+  &__img {
+    margin-top: 15vw;
+  }
+}
+
+//#menu 
+.p-menu {
+  padding: 0 0 10vw 0;
+  margin-bottom: 50vw;
+
+  &__img {
+    margin: -28vw -6vw 0 -6vw;
+
+    & img {
+      height: 400px;
+    }
+  }
+
+  &__desc {
+    bottom: -108%;
+    right: 9vw;
+    padding: 6vw;
+
+    &::after {
+      top: -6px;
+      left: 73vw;
+      height: 120px;
+    }
+
+    &::before {
+      top: 120px;
+      left: 73vw;
+      height: 120px;
+    }
+  }
+}
+
+//#info 
+.p-info {
+  padding: 5vw 0;
+
+  & img {
+    height: 400px;
+  }
+
+  &__desc {
+    bottom: -74%;
+    left: 9vw;
+    padding: 6vw;
+    width: 57%;
+
+    &::after {
+      top: -6px;
+      left: 72vw;
+      height: 120px;
+    }
+
+    &::before {
+      top: 120px;
+      left: 74.3vw;
+      height: 120px;
+    }
+  }
+
+  &__img-top {
+    margin: 30vw -6vw 30vw -6vw;
+  }
+
+  &__img {
+    margin: -20vw -6vw 0 -6vw;
+  }
+}
+
+//mobile-menu
+.mobile-menu {
+  &__ul {
+    font-size: 1.2rem;
+    padding-left: 76px;
+    padding-top: 250px;
+  }
+
+  &__li {
+    margin-bottom: 60px;
+  }
+
+  &__nav {
+    & address {
+      padding-left: 76px;
+
+      & em {
+        font-size: .9rem;
+      }
+    }
+  }
+}
+
+//footer
+.p-footer {
+  & .c-logo {
+    & img {
+      width: 26%;
+    }
+  }
+}
+
+//news
+.p-news {
+  padding: 40vw 0 10vw 0;
+}
+
+//* * * * * * news-page * * * * * * *
+.c-news {
+  padding-top: 24vw;
+
+  &__link {
+    padding: 4vw 0;
+  }
+}
+
+//* * * * * * news-sl-page * * * * * * *
+.c-news-sl {
+
+  & .c-container {
+    padding: 0 11vw;
+  }
+}
