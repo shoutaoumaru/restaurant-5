@@ -16,7 +16,7 @@ Stylesheet: 1200px以上のモニタで適用
 }
 
 .c-txt-sm {
-  font-size: .9rem;
+  font-size: 1.2rem;
   letter-spacing: 2px;
   line-height: 2;
   color: $cBlack;
@@ -31,6 +31,11 @@ Stylesheet: 1200px以上のモニタで適用
 
 .pc-container {
   padding: 0 20vw;
+}
+
+.view-more {
+  margin-top: 5vw;
+  font-size: 1.4rem;
 }
 
 //#header
@@ -103,7 +108,7 @@ Stylesheet: 1200px以上のモニタで適用
   }
 
   &__desc {
-    bottom: -31vw;
+    bottom: -19vw;
     width: 46%;
     padding: 2vw;
 
@@ -129,16 +134,18 @@ Stylesheet: 1200px以上のモニタで適用
 
 //#concept
 .p-concept {
+  height: 88px;
+
   &__img {
-    top: 3vw;
+    top: -13vw;
     width: 30vw;
   }
 
   &__title {
-    top: 50vw;
+    top: 23vw;
 
     & p {
-      font-size: 5rem;
+      font-size: 6rem;
     }
   }
 
@@ -151,12 +158,18 @@ Stylesheet: 1200px以上のモニタで適用
 .p-story {
   margin-top: 35vw;
   padding-bottom: 5vw;
+  font-size: 1.4rem;
+
+  &__title {
+    font-size: 3rem;
+    margin: 10vw 0 5vw 0;
+  }
 
   &__img {
-    margin-top: 30vw;
+    box-shadow: none;
 
     & img {
-      width: 78%;
+      width: 58%;
     }
   }
 }
@@ -165,9 +178,17 @@ Stylesheet: 1200px以上のモニタで適用
 .p-menu {
   margin-bottom: 20vw;
 
+  &__img {
+    margin: -5vw -6vw 0 -6vw;
+  }
+
+  &__title {
+    margin: 10vw 0 15vw 0;
+  }
+
   &__desc {
     padding: 3vw;
-    bottom: -187%;
+    bottom: -117%;
 
     &::before {
       top: 200px;
@@ -183,18 +204,28 @@ Stylesheet: 1200px以上のモニタで適用
 
 //#information 
 .p-info {
-  margin-bottom: 90vw;
+  margin-bottom: 55vw;
 
   &__img-top {
-    margin: 40vw -6vw 13vw -6vw;
+    margin: 20vw -6vw 13vw -6vw;
+  }
+
+  &__img {
+    margin: 10vw -6vw 0 -6vw;
   }
 
   &__desc {
     padding: 3vw;
-    bottom: -65%;
+    bottom: -40%;
+
+    &::before {
+      left: 74.1vw;
+    }
   }
 
   &__list {
+    font-size: .9rem;
+
     & p {
       margin: 0 0 1.5vw 0;
     }

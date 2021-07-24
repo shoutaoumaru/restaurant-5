@@ -361,7 +361,6 @@ a:hover {
 
   & .slide-mask {
     position: absolute;
-    z-index: 2;
     top: 0;
     left: 0;
     right: 0;
@@ -426,7 +425,7 @@ a:hover {
 
 //about
 .p-about {
-  padding: 15vw 0 20vw 0;
+  padding: 15vw 0 5vw 0;
 
   &__title {
     text-align: center;
@@ -435,18 +434,14 @@ a:hover {
 
   &__img {
     margin: 0 -6vw;
-
-    & img {
-      height: 300px;
-
-    }
+    height: 200px;
   }
 
   &__desc {
     text-align: center;
 
     &__title {
-      margin: 5vw 0;
+      margin: 10vw 0 5vw 0;
       color: rgb(192, 192, 192);
       letter-spacing: 4px;
     }
@@ -479,10 +474,11 @@ a:hover {
 
   &__img {
     position: absolute;
-    top: -5vw;
+    top: 14vw;
     left: 4vw;
-    width: 60%;
+    width: 55%;
     z-index: 1000;
+    margin-left: 20px;
 
     &__photo {
       width: 100%;
@@ -567,7 +563,7 @@ a:hover {
 .p-menu {
   // position: relative;
   padding-bottom: 36vw;
-  margin-bottom: 100vw;
+  margin-bottom: 50vw;
 
   &__title {
     text-align: center;
@@ -580,7 +576,7 @@ a:hover {
   }
 
   &__img {
-    margin: -50vw -6vw;
+    margin: 0 -6vw;
 
     & img {
       height: 230px;
@@ -589,7 +585,7 @@ a:hover {
 
   &__desc {
     position: absolute;
-    bottom: -120%;
+    bottom: -66%;
     right: -6vw;
     background-color: rgb(243, 240, 240);
     width: 94%;
@@ -675,14 +671,17 @@ a:hover {
   &__link {
     display: block;
     padding: 4vw 0;
+
+    & p {
+      margin-top: 2vw;
+    }
+  }
+
+  &__item {
     border-bottom: 1px solid rgb(235, 235, 235);
 
     &:first-child {
       border-top: 1px solid rgb(235, 235, 235);
-    }
-
-    & p {
-      margin-top: 2vw;
     }
   }
 
@@ -696,7 +695,7 @@ a:hover {
 .p-info {
   position: relative;
   padding: 15vw 0;
-  margin-bottom: 100vw;
+  margin-bottom: 20vw;
 
   &__title {
     text-align: center;
@@ -713,7 +712,7 @@ a:hover {
 
   &__img {
     position: relative;
-    margin: -55vw -6vw 0 -6vw;
+    margin: 15vw -6vw 0 -6vw;
 
     & img {
       height: 230px;
@@ -722,7 +721,7 @@ a:hover {
 
   &__desc {
     position: absolute;
-    bottom: -125%;
+    bottom: -53%;
     left: 4vw;
     background-color: rgb(243, 240, 240);
     width: 78%;

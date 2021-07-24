@@ -21,7 +21,7 @@ Stylesheet: 600px以上のモニタで適用
 }
 
 .c-txt-sm {
-  font-size: .9rem;
+  font-size: 1rem;
   letter-spacing: 2px;
   line-height: 2;
   color: $cBlack;
@@ -48,9 +48,24 @@ Stylesheet: 600px以上のモニタで適用
   }
 }
 
+.scrolldown {
+  bottom: -54px;
+  right: 35px;
+  color: $cBlack;
+
+  &::before {
+    background-color: $cGray;
+  }
+
+  &::after {
+    background-color: $cBlack;
+  }
+}
+
 //#about
 .p-about {
   position: relative;
+  padding: 15vw 0 25vw 0;
 
   &__img {
     top: -3vw;
@@ -63,11 +78,15 @@ Stylesheet: 600px以上のモニタで適用
 
   &__desc {
     position: absolute;
-    bottom: -40vw;
+    bottom: -27vw;
     right: 7.8vw;
     background-color: #fff;
     padding: 4vw;
     z-index: 1000;
+
+    &__title {
+      margin-top: 5vw;
+    }
   }
 }
 
@@ -110,7 +129,7 @@ Stylesheet: 600px以上のモニタで適用
 //#menu 
 .p-menu {
   padding: 0 0 10vw 0;
-  margin-bottom: 50vw;
+  margin-bottom: 30vw;
 
   &__img {
     margin: -28vw -6vw 0 -6vw;
@@ -121,7 +140,6 @@ Stylesheet: 600px以上のモニタで適用
   }
 
   &__desc {
-    bottom: -108%;
     right: 9vw;
     padding: 6vw;
 
@@ -142,14 +160,15 @@ Stylesheet: 600px以上のモニタで適用
 //#info 
 .p-info {
   padding: 5vw 0;
+  margin-bottom: 60vw;
 
   & img {
     height: 400px;
   }
 
   &__desc {
-    bottom: -74%;
     left: 9vw;
+    bottom: -44%;
     padding: 6vw;
     width: 57%;
 
@@ -168,35 +187,13 @@ Stylesheet: 600px以上のモニタで適用
 
   &__img-top {
     margin: 30vw -6vw 30vw -6vw;
-  }
 
-  &__img {
-    margin: -20vw -6vw 0 -6vw;
-  }
-}
-
-//mobile-menu
-.mobile-menu {
-  &__ul {
-    font-size: 1.2rem;
-    padding-left: 76px;
-    padding-top: 250px;
-  }
-
-  &__li {
-    margin-bottom: 60px;
-  }
-
-  &__nav {
-    & address {
-      padding-left: 76px;
-
-      & em {
-        font-size: .9rem;
-      }
+    & img {
+      height: 300px;
     }
   }
 }
+
 
 //footer
 .p-footer {

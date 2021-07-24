@@ -63,9 +63,9 @@
 .scrolldown {
   display: inline-block;
   position: absolute;
-  left: 47vw;
-  bottom: 2px;
-  z-index: 2;
+  right: 20px;
+  bottom: -20px;
+  z-index: 6000;
   padding: 10px 10px 90px;
   overflow: hidden;
   color: #fff;

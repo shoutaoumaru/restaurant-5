@@ -952,7 +952,6 @@ a:hover {
 
 .p-top .slide-mask {
   position: absolute;
-  z-index: 2;
   top: 0;
   left: 0;
   right: 0;
@@ -1015,7 +1014,7 @@ a:hover {
 }
 
 .p-about {
-  padding: 15vw 0 20vw 0;
+  padding: 15vw 0 5vw 0;
 }
 
 .p-about__title {
@@ -1025,10 +1024,7 @@ a:hover {
 
 .p-about__img {
   margin: 0 -6vw;
-}
-
-.p-about__img img {
-  height: 300px;
+  height: 200px;
 }
 
 .p-about__desc {
@@ -1036,7 +1032,7 @@ a:hover {
 }
 
 .p-about__desc__title {
-  margin: 5vw 0;
+  margin: 10vw 0 5vw 0;
   color: silver;
   letter-spacing: 4px;
 }
@@ -1061,10 +1057,11 @@ a:hover {
 
 .p-concept__img {
   position: absolute;
-  top: -5vw;
+  top: 14vw;
   left: 4vw;
-  width: 60%;
+  width: 55%;
   z-index: 1000;
+  margin-left: 20px;
 }
 
 .p-concept__img__photo {
@@ -1146,7 +1143,7 @@ a:hover {
 
 .p-menu {
   padding-bottom: 36vw;
-  margin-bottom: 100vw;
+  margin-bottom: 50vw;
 }
 
 .p-menu__title {
@@ -1160,7 +1157,7 @@ a:hover {
 }
 
 .p-menu__img {
-  margin: -50vw -6vw;
+  margin: 0 -6vw;
 }
 
 .p-menu__img img {
@@ -1169,7 +1166,7 @@ a:hover {
 
 .p-menu__desc {
   position: absolute;
-  bottom: -120%;
+  bottom: -66%;
   right: -6vw;
   background-color: #f3f0f0;
   width: 94%;
@@ -1261,15 +1258,18 @@ a:hover {
 .p-news__link {
   display: block;
   padding: 4vw 0;
-  border-bottom: 1px solid #ebebeb;
-}
-
-.p-news__link:first-child {
-  border-top: 1px solid #ebebeb;
 }
 
 .p-news__link p {
   margin-top: 2vw;
+}
+
+.p-news__item {
+  border-bottom: 1px solid #ebebeb;
+}
+
+.p-news__item:first-child {
+  border-top: 1px solid #ebebeb;
 }
 
 .p-news .view-more {
@@ -1279,7 +1279,7 @@ a:hover {
 .p-info {
   position: relative;
   padding: 15vw 0;
-  margin-bottom: 100vw;
+  margin-bottom: 20vw;
 }
 
 .p-info__title {
@@ -1297,7 +1297,7 @@ a:hover {
 
 .p-info__img {
   position: relative;
-  margin: -55vw -6vw 0 -6vw;
+  margin: 15vw -6vw 0 -6vw;
 }
 
 .p-info__img img {
@@ -1306,7 +1306,7 @@ a:hover {
 
 .p-info__desc {
   position: absolute;
-  bottom: -125%;
+  bottom: -53%;
   left: 4vw;
   background-color: #f3f0f0;
   width: 78%;
@@ -1887,9 +1887,9 @@ a:hover {
 .scrolldown {
   display: inline-block;
   position: absolute;
-  left: 47vw;
-  bottom: 2px;
-  z-index: 2;
+  right: 20px;
+  bottom: -20px;
+  z-index: 6000;
   padding: 10px 10px 90px;
   overflow: hidden;
   color: #fff;
@@ -2764,7 +2764,7 @@ Stylesheet: 600px以上のモニタで適用
     font-family: 'Righteous', 'Noto Serif JP', cursive;
   }
   .c-txt-sm, .p-about__desc__text {
-    font-size: .9rem;
+    font-size: 1rem;
     letter-spacing: 2px;
     line-height: 2;
     color: #161616;
@@ -2784,8 +2784,20 @@ Stylesheet: 600px以上のモニタで適用
   .header .logo {
     margin-left: 10vw;
   }
+  .scrolldown {
+    bottom: -54px;
+    right: 35px;
+    color: #161616;
+  }
+  .scrolldown::before {
+    background-color: #a0a0a0;
+  }
+  .scrolldown::after {
+    background-color: #161616;
+  }
   .p-about {
     position: relative;
+    padding: 15vw 0 25vw 0;
   }
   .p-about__img {
     top: -3vw;
@@ -2796,11 +2808,14 @@ Stylesheet: 600px以上のモニタで適用
   }
   .p-about__desc {
     position: absolute;
-    bottom: -40vw;
+    bottom: -27vw;
     right: 7.8vw;
     background-color: #fff;
     padding: 4vw;
     z-index: 1000;
+  }
+  .p-about__desc__title {
+    margin-top: 5vw;
   }
   .p-concept__img {
     top: 17vw;
@@ -2829,7 +2844,7 @@ Stylesheet: 600px以上のモニタで適用
   }
   .p-menu {
     padding: 0 0 10vw 0;
-    margin-bottom: 50vw;
+    margin-bottom: 30vw;
   }
   .p-menu__img {
     margin: -28vw -6vw 0 -6vw;
@@ -2838,7 +2853,6 @@ Stylesheet: 600px以上のモニタで適用
     height: 400px;
   }
   .p-menu__desc {
-    bottom: -108%;
     right: 9vw;
     padding: 6vw;
   }
@@ -2854,13 +2868,14 @@ Stylesheet: 600px以上のモニタで適用
   }
   .p-info {
     padding: 5vw 0;
+    margin-bottom: 60vw;
   }
   .p-info img {
     height: 400px;
   }
   .p-info__desc {
-    bottom: -74%;
     left: 9vw;
+    bottom: -44%;
     padding: 6vw;
     width: 57%;
   }
@@ -2877,22 +2892,8 @@ Stylesheet: 600px以上のモニタで適用
   .p-info__img-top {
     margin: 30vw -6vw 30vw -6vw;
   }
-  .p-info__img {
-    margin: -20vw -6vw 0 -6vw;
-  }
-  .mobile-menu__ul {
-    font-size: 1.2rem;
-    padding-left: 76px;
-    padding-top: 250px;
-  }
-  .mobile-menu__li {
-    margin-bottom: 60px;
-  }
-  .mobile-menu__nav address {
-    padding-left: 76px;
-  }
-  .mobile-menu__nav address em {
-    font-size: .9rem;
+  .p-info__img-top img {
+    height: 300px;
   }
   .p-footer .c-logo img {
     width: 26%;
@@ -2939,6 +2940,9 @@ Stylesheet: 960px以上のモニタで適用
     line-height: 2;
     color: #474747;
   }
+  .view-more {
+    margin-top: 5vw;
+  }
   .p-top .slide-mask .border.top {
     top: -20px;
   }
@@ -2965,7 +2969,7 @@ Stylesheet: 960px以上のモニタで適用
     margin: -20vw -6vw 0 -6vw;
   }
   .p-menu__desc {
-    bottom: -60%;
+    bottom: -30%;
     right: -6vw;
   }
   .p-menu__desc::after {
@@ -2977,7 +2981,7 @@ Stylesheet: 960px以上のモニタで適用
     font-size: 22px;
   }
   .p-info__desc {
-    bottom: -72%;
+    bottom: -54%;
     left: 7.8vw;
   }
   .p-info__desc::before {
@@ -2985,8 +2989,14 @@ Stylesheet: 960px以上のモニタで適用
     left: 74.3vw;
     font-size: 22px;
   }
-  .p-info__img {
-    margin: -16vw -6vw 0 -6vw;
+  .p-info__img-top {
+    margin: 15vw -6vw;
+  }
+  .p-news {
+    padding: 30vw 0 10vw 0;
+  }
+  .p-news__link {
+    padding: 2vw 0;
   }
   .c-top__tit {
     font-size: 3rem;
@@ -3022,7 +3032,7 @@ Stylesheet: 1200px以上のモニタで適用
     font-family: 'Righteous', 'Noto Serif JP', cursive;
   }
   .c-txt-sm, .p-about__desc__text {
-    font-size: .9rem;
+    font-size: 1.2rem;
     letter-spacing: 2px;
     line-height: 2;
     color: #161616;
@@ -3035,6 +3045,10 @@ Stylesheet: 1200px以上のモニタで適用
   }
   .pc-container {
     padding: 0 20vw;
+  }
+  .view-more {
+    margin-top: 5vw;
+    font-size: 1.4rem;
   }
   .header {
     background-color: #fff;
@@ -3085,7 +3099,7 @@ Stylesheet: 1200px以上のモニタで適用
     height: 400px;
   }
   .p-about__desc {
-    bottom: -31vw;
+    bottom: -19vw;
     width: 46%;
     padding: 2vw;
   }
@@ -3103,15 +3117,18 @@ Stylesheet: 1200px以上のモニタで適用
   .p-about__desc__title {
     font-size: 1.6rem;
   }
+  .p-concept {
+    height: 88px;
+  }
   .p-concept__img {
-    top: 3vw;
+    top: -13vw;
     width: 30vw;
   }
   .p-concept__title {
-    top: 50vw;
+    top: 23vw;
   }
   .p-concept__title p {
-    font-size: 5rem;
+    font-size: 6rem;
   }
   .p-concept .bg-line {
     height: 540vh;
@@ -3119,19 +3136,31 @@ Stylesheet: 1200px以上のモニタで適用
   .p-story {
     margin-top: 35vw;
     padding-bottom: 5vw;
+    font-size: 1.4rem;
+  }
+  .p-story__title {
+    font-size: 3rem;
+    margin: 10vw 0 5vw 0;
   }
   .p-story__img {
-    margin-top: 30vw;
+    -webkit-box-shadow: none;
+            box-shadow: none;
   }
   .p-story__img img {
-    width: 78%;
+    width: 58%;
   }
   .p-menu {
     margin-bottom: 20vw;
   }
+  .p-menu__img {
+    margin: -5vw -6vw 0 -6vw;
+  }
+  .p-menu__title {
+    margin: 10vw 0 15vw 0;
+  }
   .p-menu__desc {
     padding: 3vw;
-    bottom: -187%;
+    bottom: -117%;
   }
   .p-menu__desc::before {
     top: 200px;
@@ -3142,14 +3171,23 @@ Stylesheet: 1200px以上のモニタで適用
     left: -19vw;
   }
   .p-info {
-    margin-bottom: 90vw;
+    margin-bottom: 55vw;
   }
   .p-info__img-top {
-    margin: 40vw -6vw 13vw -6vw;
+    margin: 20vw -6vw 13vw -6vw;
+  }
+  .p-info__img {
+    margin: 10vw -6vw 0 -6vw;
   }
   .p-info__desc {
     padding: 3vw;
-    bottom: -65%;
+    bottom: -40%;
+  }
+  .p-info__desc::before {
+    left: 74.1vw;
+  }
+  .p-info__list {
+    font-size: .9rem;
   }
   .p-info__list p {
     margin: 0 0 1.5vw 0;
