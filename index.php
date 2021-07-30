@@ -2,18 +2,7 @@
 <html lang="ja">
 
 <head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>飲食店テンプレート5/HOME</title>
-  <link rel="stylesheet" href="/styles/vendor/logo-animation.min.css">
-  <link rel="stylesheet" href="/styles/vendor/bootstrap-reboot.css">
-  <link rel="stylesheet" href="/styles/vendor/animsition.min.css">
-  <link rel="preconnect" href="https://fonts.gstatic.com">
-  <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+JP:wght@200;400&family=Righteous&display=swap"
-    rel="stylesheet">
-  <link rel="stylesheet" href="/styles/vendor/swiper.min.css">
-  <link rel="stylesheet" href="/styles/style.css">
+  <?php get_header(); ?>
 </head>
 
 <body>
@@ -103,9 +92,9 @@
       <div class="pc-container">
         <div class="pc-header">
           <ul class="pc-header__list">
-            <li class="pc-header__item"><a class="animsition-link" href="/">top</a></li>
-            <li class="pc-header__item"><a class="animsition-link" href="/menu/menu.html">menu</a></li>
-            <li class="pc-header__item"><a class="animsition-link" href="/news/news.html">news</a></li>
+            <li class="pc-header__item"><a class="animsition-link" href="<?php echo esc_url( home_url('/')); ?>">top</a></li>
+            <li class="pc-header__item"><a class="animsition-link" href="<?php echo esc_url( home_url('/menu')); ?>">menu</a></li>
+            <li class="pc-header__item"><a class="animsition-link" href="<?php echo esc_url( home_url('/news')); ?>">news</a></li>
           </ul>
         </div>
       </div>
@@ -129,22 +118,22 @@
           <div class="border left" style="z-index: 0; transform: matrix(1, 0, 0, 1, 0, 0);"></div>
         </div>
         <div class="p-top__logo clip-js1 left">
-          <img src="/images/common/riv-text-logo-wh.png" alt="">
+          <img src="<?php echo get_template_directory_uri(); ?>/images/common/riv-text-logo-wh.png" alt="">
         </div>
         <div class="hero">
           <div class="swiper-container">
             <div class="swiper-wrapper">
               <div class="swiper-slide">
-                <img class="view-sp" src="/images/home/paella@sp.jpg" />
-                <img class="view-pc" src="/images/home/paella@pc.jpg" />
+                <img class="view-sp" src="<?php echo get_template_directory_uri(); ?>/images/home/paella@sp.jpg" />
+                <img class="view-pc" src="<?php echo get_template_directory_uri(); ?>/images/home/paella@pc.jpg" />
               </div>
               <div class="swiper-slide">
-                <img class="view-sp" src="/images/home/steak_1@sp.jpg" />
-                <img class="view-pc" src="/images/home/steak_1@pc.jpg" />
+                <img class="view-sp" src="<?php echo get_template_directory_uri(); ?>/images/home/steak_1@sp.jpg" />
+                <img class="view-pc" src="<?php echo get_template_directory_uri(); ?>/images/home/steak_1@pc.jpg" />
               </div>
               <div class="swiper-slide">
-                <img class="view-sp" src="/images/home/store_3@sp.jpg" />
-                <img class="view-pc" src="/images/home/store_3@pc.jpg" />
+                <img class="view-sp" src="<?php echo get_template_directory_uri(); ?>/images/home/store_3@sp.jpg" />
+                <img class="view-pc" src="<?php echo get_template_directory_uri(); ?>/images/home/store_3@pc.jpg" />
               </div>
             </div>
           </div>
@@ -159,7 +148,7 @@
           <p class="c-txt-lr">about</p>
         </h2>
         <div class="p-about__img cover-slide">
-          <img class="img-zoom" src="/images/home/steak_2@pc.jpg" alt="">
+          <img class="img-zoom" src="<?php echo get_template_directory_uri(); ?>/images/home/steak_2@pc.jpg" alt="">
         </div>
         <div class="p-about__desc appear up">
           <h3 class="p-about__desc__title item">about</h3>
@@ -181,8 +170,8 @@
       <div class="bg-line"></div>
       <div class="c-container appear up">
         <div class="p-concept__img">
-          <img class="p-concept__img__photo parallax" src="/images/home/pizza@sp.jpg" alt="">
-          <img class="p-concept__img__shadow parallax" src="/images/home/about_b-shadow.png" alt="">
+          <img class="p-concept__img__photo parallax" src="<?php echo get_template_directory_uri(); ?>/images/home/pizza@sp.jpg" alt="">
+          <img class="p-concept__img__shadow parallax" src="<?php echo get_template_directory_uri(); ?>/images/home/about_b-shadow.png" alt="">
         </div>
         <div class="p-concept__title item">
           <p>delicious</p>
@@ -205,14 +194,14 @@
         </div>
         <div class="p-story__sub-img appear up">
           <div class="p-story__photo01 item">
-            <img class="parallax" src="/images/home/magurodon.jpg" alt="">
+            <img class="parallax" src="<?php echo get_template_directory_uri(); ?>/images/home/magurodon.jpg" alt="">
           </div>
           <div class="p-story__photo02 item">
-            <img src="/images/home/yakitori.jpg" alt="">
+            <img src="<?php echo get_template_directory_uri(); ?>/images/home/yakitori.jpg" alt="">
           </div>
         </div>
         <div class="p-story__img">
-          <img class="parallax-img" src="images/home/salad_1@pc.jpg" alt="">
+          <img class="parallax-img" src="<?php echo get_template_directory_uri(); ?>/images/home/salad_1@pc.jpg" alt="">
         </div>
       </div>
     </section>
@@ -223,7 +212,7 @@
         <div class="p-menu__wrap">
           <div class="p-menu__img">
             <div class="p-menu__photo cover-slide">
-              <img class="img-zoom parallax" src="/images/home/steak_1@pc.jpg" alt="">
+              <img class="img-zoom parallax" src="<?php echo get_template_directory_uri(); ?>/images/home/steak_1@pc.jpg" alt="">
             </div>
           </div>
           <div class="p-menu__desc item">
@@ -234,7 +223,7 @@
               <p class="p-menu__desc-text c-txt-sm">めざしたのは、異なる旨味の共存と、これまでのイメージを超える食事体験。そんな想いから、RivRundは誕生しました。</p>
             </div>
             <div class="view-more">
-              <a class="view-more__link animsition-link" href="/menu/menu.html">
+              <a class="view-more__link animsition-link" href="<?php echo esc_url( home_url('/menu')); ?>">
                 <span>MENU LIST</span></a>
             </div>
           </div>
@@ -245,12 +234,12 @@
     <section id="information" class="p-info">
       <div class="c-container">
         <div class="p-info__img-top">
-          <img class="parallax-lt" src="/images/home/cafe.jpg" alt="">
+          <img class="parallax-lt" src="<?php echo get_template_directory_uri(); ?>/images/home/cafe.jpg" alt="">
         </div>
         <h2 class="p-info__title c-txt-lr clip-js left">information</h2>
         <div class="p-info__img">
           <div class="p-info__photo cover-slide">
-            <img class="img-zoom parallax" src="/images/home/store_3@pc.jpg" alt="">
+            <img class="img-zoom parallax" src="<?php echo get_template_directory_uri(); ?>/images/home/store_3@pc.jpg" alt="">
           </div>
         </div>
         <div class="p-info__desc-wrap appear up">
@@ -300,27 +289,19 @@
         </h2>
         <div class="p-news__wrapper appear up">
           <ul class="p-news__list item">
-            <li class="p-news__item">
-              <a class="p-news__link c-txt-sm" href="">
-                <span>2021/05/25</span>
-                <p>営業時間短縮営業について</p>
+            <?php query_posts('posts_per_page=3'); ?>
+            <?php if (have_posts()) : while(have_posts()) : the_post();?>
+              <li class="p-news__item">
+                <a class="p-news__link c-txt-sm" href="<?php the_permalink(); ?>">
+                  <span class="p-news__date"><?php echo get_the_date(); ?></span>
+                  <p><?php the_title(); ?></p>
               </a>
-            </li>
-            <li class="p-news__item">
-              <a class="p-news__link c-txt-sm" href="">
-                <span>2021/05/25</span>
-                <p>新型コロナウィルス感染拡大について</p>
-              </a>
-            </li>
-            <li class="p-news__item">
-              <a class="p-news__link c-txt-sm" href="">
-                <span>2021/05/25</span>
-                <p>ホームページリニューアル致しました</p>
-              </a>
-            </li>
+              </li>
+            <?php endwhile; ?>
+            <?php endif; ?>
           </ul>
           <div class="view-more item">
-            <a class="view-more__link animsition-link" href="/news/news.html">
+            <a class="view-more__link animsition-link" href="<?php echo esc_url( home_url('/news')); ?>">
               <span>NEWS LIST</span></a>
           </div>
         </div>
@@ -331,14 +312,14 @@
       <div class="c-container">
         <div class="p-footer__sns">
           <div class="sns-insta">
-            <a class="sns-link" href="#"><i></i></a>
+            <a class="sns-link" href="https://www.instagram.com/" target="_blank"><i></i></a>
           </div>
           <div class="sns-fb">
-            <a class="sns-link" href="#"><i></i></a>
+            <a class="sns-link" href="https://www.facebook.com/" target="_blank"><i></i></a>
           </div>
         </div>
         <div class="c-logo">
-          <img src="/images/common/riv_logo.png" alt="">
+          <img src="<?php echo get_template_directory_uri(); ?>/images/common/riv_logo.png" alt="">
         </div>
         <div class="copyright">
           &copy; RivRound.inc
@@ -350,13 +331,13 @@
       <nav class="mobile-menu__nav">
         <ul class="mobile-menu__list">
           <li class="mobile-menu__item">
-            <a class="animsition-link" href="/">top</a>
+            <a class="animsition-link" href="<?php echo esc_url( home_url('/')); ?>">top</a>
           </li>
           <li class="mobile-menu__item">
-            <a class="animsition-link" href="/menu/menu.html">menu</a>
+            <a class="animsition-link" href="<?php echo esc_url( home_url('/menu')); ?>">menu</a>
           </li>
           <li class="mobile-menu__item">
-            <a class="animsition-link" href="/news/news.html">news</a>
+            <a class="animsition-link" href="<?php echo esc_url( home_url('/news')); ?>">news</a>
           </li>
         </ul>
         <div class="reserve-btn-wrap">
@@ -378,19 +359,7 @@
     <!------ /.mobile-menu ----->
   </div>
   <!-- .superwrapper -->
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
-  <script src="/scripts/vendor/pace.js"></script>
-  <script src="/scripts/vendor/swiper.min.js"></script>
-  <script src="/scripts/vendor/simpleParallax.min.js"></script>
-  <script src="/scripts/vendor/animsition.min.js"></script>
-  <script src="/scripts/libs/page.js"></script>
-  <script src="/scripts/libs/hero-slider.js"></script>
-  <script src="/scripts/libs/text-animation.js"></script>
-  <script src="/scripts/libs/scroll-btn.js"></script>
-  <script src="/scripts/libs/scroll.js"></script>
-  <script src="/scripts/libs/mobile-menu.js"></script>
-  <script src="/scripts/libs/parallax.js"></script>
-  <script src="/scripts/main.js"></script>
+  <?php get_footer(); ?>
 </body>
 
 </html>

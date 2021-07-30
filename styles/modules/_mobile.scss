@@ -71,7 +71,7 @@
           right: 5px;
           height: 12px;
           width: 12px;
-          background-image: url(/images/common/icon-link-1-black.png);
+          background-image: url(../images/common/icon-link-1-black.png);
           background-size: contain;
           background-repeat: no-repeat;
         }
@@ -90,7 +90,7 @@
           right: 10px;
           height: 12px;
           width: 12px;
-          background-image: url(/images/common/icon-tel.png);
+          background-image: url(../images/common/icon-tel.png);
           background-size: contain;
           background-repeat: no-repeat;
         }
@@ -140,8 +140,8 @@
   top: 0;
   right: 0;
   overflow: hidden;
-  height: 110px;
   width: 100%;
+  height: 80px;
   z-index: 9000;
 
 
