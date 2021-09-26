@@ -1,7 +1,10 @@
-//* * * * * * setting * * * * * * * 
+//* * * * * * setting * * * * * * *
 body {
-  font-family: 'Righteous', 'Noto Serif JP', cursive;
+  font-family: "Righteous", "Noto Serif JP", cursive;
   text-transform: uppercase;
+  &.hidden {
+    overflow: hidden;
+  }
 }
 
 img {
@@ -32,7 +35,7 @@ a:hover {
   letter-spacing: 5px;
   line-height: 2;
   color: $cBlack;
-  font-family: 'Righteous', 'Noto Serif JP', cursive;
+  font-family: "Righteous", "Noto Serif JP", cursive;
 }
 
 .c-txt-md {
@@ -40,19 +43,18 @@ a:hover {
   letter-spacing: 4px;
   line-height: 2;
   color: $cBlack;
-  font-family: 'Righteous', 'Noto Serif JP', cursive;
-
+  font-family: "Righteous", "Noto Serif JP", cursive;
 }
 
 .c-txt-sm {
-  font-size: .9rem;
+  font-size: 0.9rem;
   letter-spacing: 2px;
   line-height: 2;
   color: $cBlack;
 }
 
 .c-txt-xs {
-  font-size: .7rem;
+  font-size: 0.7rem;
   letter-spacing: 2px;
   line-height: 2;
   color: $cSubBlack;
@@ -60,7 +62,7 @@ a:hover {
 
 .page-link {
   font-weight: bold;
-  font-size: .9rem;
+  font-size: 0.9rem;
   color: rgb(66, 66, 66);
 }
 
@@ -78,7 +80,7 @@ a:hover {
       position: absolute;
       top: 50%;
       left: 0;
-      content: '';
+      content: "";
       display: inline-block;
       height: 1px;
       width: 8vw;
@@ -103,10 +105,9 @@ a:hover {
     line-height: 2.2;
     color: $cSubBlack;
     font-weight: 100;
-    font-size: .9rem;
+    font-size: 0.9rem;
     margin-bottom: 4vw;
   }
-
 }
 
 .c-txt-vertical {
@@ -115,7 +116,7 @@ a:hover {
   left: 5%;
   color: #a7816d;
   writing-mode: vertical-lr;
-  font-size: .5rem;
+  font-size: 0.5rem;
   letter-spacing: 2px;
 }
 
@@ -175,7 +176,7 @@ a:hover {
   position: relative;
 
   &::before {
-    content: '';
+    content: "";
     display: block;
     background-image: url(/images/common/icon-map.png);
     background-position: center;
@@ -184,7 +185,6 @@ a:hover {
     height: 17px;
     width: 17px;
   }
-
 }
 
 .icon-insta {
@@ -195,7 +195,7 @@ a:hover {
   padding-bottom: 5px;
 
   &::before {
-    content: '';
+    content: "";
     position: absolute;
     top: 0;
     left: 0;
@@ -283,7 +283,7 @@ a:hover {
     bottom: 0;
     left: 0;
     background-color: $cWhite;
-    opacity: .7;
+    opacity: 0.7;
     height: 6.5vh;
     width: 100%;
     z-index: 2000;
@@ -330,7 +330,7 @@ a:hover {
   }
 }
 
-//#top 
+//#top
 .p-top {
   position: relative;
 
@@ -409,13 +409,13 @@ a:hover {
   }
 
   & .swiper-container {
-    @media (max-width:959px) {
+    @media (max-width: 959px) {
       & .view-pc {
         display: none;
       }
     }
 
-    @media (min-width:960px) {
+    @media (min-width: 960px) {
       & .view-sp {
         display: none;
       }
@@ -459,7 +459,6 @@ a:hover {
       }
     }
   }
-
 }
 
 //concept
@@ -491,7 +490,7 @@ a:hover {
       height: auto;
       width: 130%;
       z-index: -1;
-      opacity: .6;
+      opacity: 0.6;
     }
   }
 
@@ -509,7 +508,7 @@ a:hover {
       font-size: 2.8rem;
       letter-spacing: 10px;
       color: rgb(175, 142, 142);
-      opacity: .7;
+      opacity: 0.7;
     }
   }
 }
@@ -542,7 +541,7 @@ a:hover {
     width: 50%;
 
     & img {
-      box-shadow: 20px 50px 45px rgb(211, 211, 211)
+      box-shadow: 20px 50px 45px rgb(211, 211, 211);
     }
   }
 
@@ -604,14 +603,14 @@ a:hover {
       writing-mode: vertical-rl;
       color: $cBlack;
 
-      @media (min-width:600px) {
+      @media (min-width: 600px) {
         position: absolute;
         left: 50vw;
       }
     }
 
     &::after {
-      content: '';
+      content: "";
       position: absolute;
       top: 0;
       left: -12vw;
@@ -620,7 +619,7 @@ a:hover {
       margin-left: 8px;
       border-left: 1px solid rgba(0, 0, 0, 0.8);
 
-      @media (min-width:600px) {
+      @media (min-width: 600px) {
         position: absolute;
         left: 50vw;
       }
@@ -632,7 +631,7 @@ a:hover {
 
     &-text {
       margin-bottom: 5vw;
-      font-size: .8rem;
+      font-size: 0.8rem;
     }
 
     & .view-more {
@@ -688,7 +687,6 @@ a:hover {
   & .view-more {
     padding-right: 0;
   }
-
 }
 
 //#information
@@ -740,14 +738,14 @@ a:hover {
       writing-mode: vertical-rl;
       color: $cBlack;
 
-      @media (min-width:600px) {
+      @media (min-width: 600px) {
         position: absolute;
         right: 54.3vw;
       }
     }
 
     &::after {
-      content: '';
+      content: "";
       position: absolute;
       top: 0;
       right: -9vw;
@@ -756,7 +754,7 @@ a:hover {
       margin-left: 8px;
       border-left: 1px solid rgba(0, 0, 0, 0.8);
 
-      @media (min-width:600px) {
+      @media (min-width: 600px) {
         position: absolute;
         right: 55vw;
       }
@@ -768,7 +766,7 @@ a:hover {
 
     &-text {
       margin-bottom: 5vw;
-      font-size: .8rem;
+      font-size: 0.8rem;
     }
 
     & .view-more {
@@ -784,7 +782,7 @@ a:hover {
           position: absolute;
           top: 3px;
           left: 0;
-          content: '';
+          content: "";
           display: inline-block;
           background-image: url(/images/common/icon-map.png);
           background-size: contain;
@@ -797,8 +795,8 @@ a:hover {
   }
 
   &__list {
-    font-size: .75rem;
-    font-family: 'Noto Serif JP';
+    font-size: 0.75rem;
+    font-family: "Noto Serif JP";
 
     & p {
       margin: 1vw 0 2.5vw 0;
@@ -811,7 +809,7 @@ a:hover {
   }
 }
 
-//#footer 
+//#footer
 .p-footer {
   padding: 10vw 0;
   background-color: rgb(238, 231, 231);
@@ -870,7 +868,6 @@ a:hover {
         width: 22px;
       }
     }
-
   }
 
   & .sns-fb {
@@ -901,19 +898,17 @@ a:hover {
         width: 22px;
       }
     }
-
   }
 
   & .copyright {
     text-align: center;
     margin-top: 5vw;
-    font-size: .8rem;
+    font-size: 0.8rem;
   }
 }
 
-//* * * * * * menu-page * * * * * * * 
+//* * * * * * menu-page * * * * * * *
 .superwrapper-menu {
-
   .c-top {
     margin-top: 30vw;
 
@@ -930,13 +925,11 @@ a:hover {
   .c-menu {
     padding: 20vw 0;
   }
-
-
 }
 
-//* * * * * * news-page * * * * * * * 
+//* * * * * * news-page * * * * * * *
 .c-news {
-  padding-top: 40vw;
+  padding-top: 10vw;
 
   &__link {
     display: block;
@@ -972,7 +965,7 @@ a:hover {
       width: 10vw;
       height: 10vw;
       border-radius: 100%;
-      border: 1px solid #C4CCD1;
+      border: 1px solid #c4ccd1;
       background: #fff;
       margin: 0 1.3vw;
     }
@@ -1000,13 +993,13 @@ a:hover {
       }
     }
 
-    @media (max-width:767px) {
+    @media (max-width: 767px) {
       & .next {
         display: none;
       }
     }
 
-    @media (min-width:768px) {
+    @media (min-width: 768px) {
       & .page-numbers:not(.next):not(.prev) {
         width: 45px;
         height: 45px;
@@ -1020,7 +1013,7 @@ a:hover {
 
   .c-news__contents {
     line-height: 2;
-    font-size: .8rem;
+    font-size: 0.8rem;
   }
 
   .c-news__title {
@@ -1033,10 +1026,8 @@ a:hover {
   }
 }
 
-//* * * * * * news-single-page * * * * * * * 
+//* * * * * * news-single-page * * * * * * *
 .c-news-sl {
-  padding-top: 100px;
-
   & .c-container {
     padding: 0 5vw;
   }

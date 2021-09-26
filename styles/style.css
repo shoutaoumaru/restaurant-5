@@ -610,8 +610,12 @@
 }
 
 body {
-  font-family: 'Righteous', 'Noto Serif JP', cursive;
+  font-family: "Righteous", "Noto Serif JP", cursive;
   text-transform: uppercase;
+}
+
+body.hidden {
+  overflow: hidden;
 }
 
 img {
@@ -643,7 +647,7 @@ a:hover {
   letter-spacing: 5px;
   line-height: 2;
   color: #161616;
-  font-family: 'Righteous', 'Noto Serif JP', cursive;
+  font-family: "Righteous", "Noto Serif JP", cursive;
 }
 
 .c-txt-md, .p-about__desc__subtitle {
@@ -651,18 +655,18 @@ a:hover {
   letter-spacing: 4px;
   line-height: 2;
   color: #161616;
-  font-family: 'Righteous', 'Noto Serif JP', cursive;
+  font-family: "Righteous", "Noto Serif JP", cursive;
 }
 
 .c-txt-sm, .p-about__desc__text {
-  font-size: .9rem;
+  font-size: 0.9rem;
   letter-spacing: 2px;
   line-height: 2;
   color: #161616;
 }
 
 .c-txt-xs {
-  font-size: .7rem;
+  font-size: 0.7rem;
   letter-spacing: 2px;
   line-height: 2;
   color: #474747;
@@ -670,7 +674,7 @@ a:hover {
 
 .page-link {
   font-weight: bold;
-  font-size: .9rem;
+  font-size: 0.9rem;
   color: #424242;
 }
 
@@ -688,7 +692,7 @@ a:hover {
   position: absolute;
   top: 50%;
   left: 0;
-  content: '';
+  content: "";
   display: inline-block;
   height: 1px;
   width: 8vw;
@@ -713,7 +717,7 @@ a:hover {
   line-height: 2.2;
   color: #474747;
   font-weight: 100;
-  font-size: .9rem;
+  font-size: 0.9rem;
   margin-bottom: 4vw;
 }
 
@@ -725,7 +729,7 @@ a:hover {
   -webkit-writing-mode: vertical-lr;
       -ms-writing-mode: tb-lr;
           writing-mode: vertical-lr;
-  font-size: .5rem;
+  font-size: 0.5rem;
   letter-spacing: 2px;
 }
 
@@ -786,7 +790,7 @@ a:hover {
 }
 
 .icon-map::before {
-  content: '';
+  content: "";
   display: block;
   background-image: url(/images/common/icon-map.png);
   background-position: center;
@@ -805,7 +809,7 @@ a:hover {
 }
 
 .icon-insta::before {
-  content: '';
+  content: "";
   position: absolute;
   top: 0;
   left: 0;
@@ -865,7 +869,7 @@ a:hover {
   bottom: 0;
   left: 0;
   background-color: #fff;
-  opacity: .7;
+  opacity: 0.7;
   height: 6.5vh;
   width: 100%;
   z-index: 2000;
@@ -1075,7 +1079,7 @@ a:hover {
   height: auto;
   width: 130%;
   z-index: -1;
-  opacity: .6;
+  opacity: 0.6;
 }
 
 .p-concept__title {
@@ -1093,7 +1097,7 @@ a:hover {
   font-size: 2.8rem;
   letter-spacing: 10px;
   color: #af8e8e;
-  opacity: .7;
+  opacity: 0.7;
 }
 
 .p-story {
@@ -1198,7 +1202,7 @@ a:hover {
 }
 
 .p-menu__desc::after {
-  content: '';
+  content: "";
   position: absolute;
   top: 0;
   left: -12vw;
@@ -1221,7 +1225,7 @@ a:hover {
 
 .p-menu__desc-text {
   margin-bottom: 5vw;
-  font-size: .8rem;
+  font-size: 0.8rem;
 }
 
 .p-menu__desc .view-more {
@@ -1338,7 +1342,7 @@ a:hover {
 }
 
 .p-info__desc::after {
-  content: '';
+  content: "";
   position: absolute;
   top: 0;
   right: -9vw;
@@ -1361,7 +1365,7 @@ a:hover {
 
 .p-info__desc-text {
   margin-bottom: 5vw;
-  font-size: .8rem;
+  font-size: 0.8rem;
 }
 
 .p-info__desc .view-more {
@@ -1379,7 +1383,7 @@ a:hover {
   position: absolute;
   top: 3px;
   left: 0;
-  content: '';
+  content: "";
   display: inline-block;
   background-image: url(/images/common/icon-map.png);
   background-size: contain;
@@ -1389,8 +1393,8 @@ a:hover {
 }
 
 .p-info__list {
-  font-size: .75rem;
-  font-family: 'Noto Serif JP';
+  font-size: 0.75rem;
+  font-family: "Noto Serif JP";
 }
 
 .p-info__list p {
@@ -1510,7 +1514,7 @@ a:hover {
 .p-footer .copyright {
   text-align: center;
   margin-top: 5vw;
-  font-size: .8rem;
+  font-size: 0.8rem;
 }
 
 .superwrapper-menu .c-top {
@@ -1531,7 +1535,7 @@ a:hover {
 }
 
 .c-news {
-  padding-top: 40vw;
+  padding-top: 10vw;
 }
 
 .c-news__link {
@@ -1575,7 +1579,7 @@ a:hover {
   width: 10vw;
   height: 10vw;
   border-radius: 100%;
-  border: 1px solid #C4CCD1;
+  border: 1px solid #c4ccd1;
   background: #fff;
   margin: 0 1.3vw;
 }
@@ -1620,7 +1624,7 @@ a:hover {
 
 .c-news .c-news__contents {
   line-height: 2;
-  font-size: .8rem;
+  font-size: 0.8rem;
 }
 
 .c-news .c-news__title {
@@ -1630,10 +1634,6 @@ a:hover {
 
 .c-news .c-news__block {
   padding: 8vw 0;
-}
-
-.c-news-sl {
-  padding-top: 100px;
 }
 
 .c-news-sl .c-container {
