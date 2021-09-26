@@ -8,7 +8,7 @@ Stylesheet: 600px以上のモニタで適用
   letter-spacing: 5px;
   line-height: 2;
   color: $cBlack;
-  font-family: 'Righteous', 'Noto Serif JP', cursive;
+  font-family: "Righteous", "Noto Serif JP", cursive;
 }
 
 .c-txt-md {
@@ -16,8 +16,7 @@ Stylesheet: 600px以上のモニタで適用
   letter-spacing: 4px;
   line-height: 2;
   color: $cBlack;
-  font-family: 'Righteous', 'Noto Serif JP', cursive;
-
+  font-family: "Righteous", "Noto Serif JP", cursive;
 }
 
 .c-txt-sm {
@@ -28,7 +27,7 @@ Stylesheet: 600px以上のモニタで適用
 }
 
 .c-txt-xs {
-  font-size: .7rem;
+  font-size: 0.7rem;
   letter-spacing: 2px;
   line-height: 2;
   color: $cSubBlack;
@@ -126,7 +125,7 @@ Stylesheet: 600px以上のモニタで適用
   }
 }
 
-//#menu 
+//#menu
 .p-menu {
   padding: 0 0 10vw 0;
   margin-bottom: 30vw;
@@ -157,7 +156,7 @@ Stylesheet: 600px以上のモニタで適用
   }
 }
 
-//#info 
+//#info
 .p-info {
   padding: 5vw 0;
   margin-bottom: 60vw;
@@ -193,7 +192,6 @@ Stylesheet: 600px以上のモニタで適用
     }
   }
 }
-
 
 //footer
 .p-footer {
@@ -236,7 +234,7 @@ Stylesheet: 600px以上のモニタで適用
 
 //* * * * * * news-page * * * * * * *
 .c-news {
-  padding-top: 24vw;
+  padding-top: 5vw;
 
   &__link {
     padding: 4vw 0;
@@ -245,7 +243,6 @@ Stylesheet: 600px以上のモニタで適用
 
 //* * * * * * news-sl-page * * * * * * *
 .c-news-sl {
-
   & .c-container {
     padding: 0 11vw;
   }
