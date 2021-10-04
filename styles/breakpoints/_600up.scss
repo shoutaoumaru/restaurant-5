@@ -126,21 +126,31 @@ Stylesheet: 600px以上のモニタで適用
   }
 }
 
+//#instagram 
+.p-insta {
+  margin-bottom: 100px;
+}
+
 //#menu 
 .p-menu {
   padding: 0 0 10vw 0;
   margin-bottom: 30vw;
+
+  &__wrap {
+    margin-top: 300px;
+  }
 
   &__img {
     margin: -28vw -6vw 0 -6vw;
 
     & img {
       height: 400px;
+      width: 80%;
     }
   }
 
   &__desc {
-    right: 9vw;
+    right: 0;
     padding: 6vw;
 
     &::after {
@@ -164,10 +174,11 @@ Stylesheet: 600px以上のモニタで適用
 
   & img {
     height: 400px;
+    width: 80%;
   }
 
   &__desc {
-    left: 9vw;
+    left: 7vw;
     bottom: -44%;
     padding: 6vw;
     width: 57%;
@@ -183,6 +194,10 @@ Stylesheet: 600px以上のモニタで適用
       left: 74.3vw;
       height: 120px;
     }
+  }
+
+  &__img {
+    text-align: right;
   }
 
   &__img-top {

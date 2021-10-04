@@ -831,6 +831,51 @@ a:hover {
   z-index: -2;
 }
 
+.insta-link {
+  text-align: right;
+  margin-bottom: 10px;
+}
+
+.insta-link span {
+  position: relative;
+  display: inline-block;
+  padding-left: 25px;
+  padding-right: 15px;
+  border-bottom: 1px solid #474747;
+  font-size: 22px;
+  color: #474747;
+}
+
+.insta-link span::before {
+  content: "";
+  display: inline-block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  margin: auto;
+  height: 22px;
+  width: 22px;
+  background-image: url(../images/common/icon-insta-gr.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.insta-link span::after {
+  content: "";
+  display: inline-block;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+  height: 12px;
+  width: 12px;
+  background-image: url(../images/common/arrow.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
 .header {
   z-index: 2000;
   width: 100%;
@@ -1101,7 +1146,6 @@ a:hover {
 }
 
 .p-story {
-  padding-bottom: 20vw;
   text-align: center;
 }
 
@@ -1143,6 +1187,63 @@ a:hover {
 .p-story__img {
   -webkit-box-shadow: 20px 50px 45px #a3a3a3;
           box-shadow: 20px 50px 45px #a3a3a3;
+}
+
+.p-insta {
+  margin-bottom: 100px;
+}
+
+.p-insta__tit {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.p-insta-img {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-bottom: 30px;
+}
+
+.p-insta-img a {
+  width: 33%;
+}
+
+@media (max-width: 599px) {
+  .p-insta-img {
+    margin: 0 -5vw 30px -5vw;
+  }
+  .p-insta-img a {
+    width: 33%;
+    height: 120px;
+  }
+}
+
+@media (min-width: 960px) {
+  .p-insta-img {
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    margin-bottom: 60px;
+  }
+  .p-insta .insta-link {
+    text-align: center;
+  }
+  .p-insta .insta-link span {
+    font-size: 34px;
+    padding-left: 50px;
+    padding-right: 30px;
+  }
+  .p-insta .insta-link span::before {
+    height: 34px;
+    width: 34px;
+  }
+  .p-insta .insta-link span::after {
+    height: 20px;
+    width: 20px;
+  }
 }
 
 .p-menu {
@@ -2842,18 +2943,25 @@ Stylesheet: 600px以上のモニタで適用
   .p-story__img {
     margin-top: 15vw;
   }
+  .p-insta {
+    margin-bottom: 100px;
+  }
   .p-menu {
     padding: 0 0 10vw 0;
     margin-bottom: 30vw;
+  }
+  .p-menu__wrap {
+    margin-top: 300px;
   }
   .p-menu__img {
     margin: -28vw -6vw 0 -6vw;
   }
   .p-menu__img img {
     height: 400px;
+    width: 80%;
   }
   .p-menu__desc {
-    right: 9vw;
+    right: 0;
     padding: 6vw;
   }
   .p-menu__desc::after {
@@ -2872,9 +2980,10 @@ Stylesheet: 600px以上のモニタで適用
   }
   .p-info img {
     height: 400px;
+    width: 80%;
   }
   .p-info__desc {
-    left: 9vw;
+    left: 7vw;
     bottom: -44%;
     padding: 6vw;
     width: 57%;
@@ -2888,6 +2997,9 @@ Stylesheet: 600px以上のモニタで適用
     top: 120px;
     left: 74.3vw;
     height: 120px;
+  }
+  .p-info__img {
+    text-align: right;
   }
   .p-info__img-top {
     margin: 30vw -6vw 30vw -6vw;
