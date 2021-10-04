@@ -6,8 +6,8 @@
 </head>
 
 <body>
-  <div class="p-superwrapper animsition">
-    <div class="svg-animation">
+  <div class="p-superwrapper">
+    <!-- <div class="svg-animation">
       <svg id="レイヤー_1" data-name="レイヤー 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 380.06 99.83"
         width="380.05999755859375" height="99.83000183105469">
         <path class="cls-1 svg-elem-1"
@@ -76,7 +76,7 @@
           }
         </style>
       </svg>
-    </div>
+    </div> -->
     <!-- /.svg-animation -->
     <header id="header" class="header">
       <div class="mobile-container">
@@ -168,9 +168,9 @@
     <!-- #/about -->
     <section id="concept" class="p-concept">
       <div class="bg-line"></div>
-      <div class="c-container appear up">
+      <div class="c-container">
         <div class="p-concept__img">
-          <img class="p-concept__img__photo parallax" src="<?php echo get_template_directory_uri(); ?>/images/home/pizza@sp.jpg" alt="">
+          <img class="p-concept__img__photo parallax-img" src="<?php echo get_template_directory_uri(); ?>/images/home/pizza@sp.jpg" alt="">
           <img class="p-concept__img__shadow parallax" src="<?php echo get_template_directory_uri(); ?>/images/home/about_b-shadow.png" alt="">
         </div>
         <div class="p-concept__title item">
@@ -193,19 +193,27 @@
           <p>見つけ出しました。</p>
         </div>
         <div class="p-story__sub-img appear up">
-          <div class="p-story__photo01 item">
+          <div class="p-story__photo01 item ">
             <img class="parallax" src="<?php echo get_template_directory_uri(); ?>/images/home/magurodon.jpg" alt="">
           </div>
           <div class="p-story__photo02 item">
             <img src="<?php echo get_template_directory_uri(); ?>/images/home/yakitori.jpg" alt="">
           </div>
         </div>
-        <div class="p-story__img">
-          <img class="parallax-img" src="<?php echo get_template_directory_uri(); ?>/images/home/salad_1@pc.jpg" alt="">
-        </div>
       </div>
     </section>
     <!-- /#story -->
+    <section id="instagram" class="p-insta">
+      <div class="c-container">
+        <h2 class="p-about__title clip-js left">
+          <p class="c-txt-lr">Instagram</p>
+        </h2>
+        <div class="p-insta-img">
+        <?php echo apply_filters('the_content', '[instagram-feed]'); ?>
+        </div>
+      </div>
+    </section>
+    <!-- /#instagram -->
     <section id="menu" class="p-menu">
       <div class="c-container appear up">
         <h2 class="p-menu__title c-txt-lr clip-js left">menu</h2>

@@ -2,8 +2,6 @@
   <script src="<?php echo get_template_directory_uri(); ?>/scripts/vendor/pace.js"></script>
   <script src="<?php echo get_template_directory_uri(); ?>/scripts/vendor/swiper.min.js"></script>
   <script src="<?php echo get_template_directory_uri(); ?>/scripts/vendor/simpleParallax.min.js"></script>
-  <script src="<?php echo get_template_directory_uri(); ?>/scripts/vendor/animsition.min.js"></script>
-  <script src="<?php echo get_template_directory_uri(); ?>/scripts/libs/page.js"></script>
   <script src="<?php echo get_template_directory_uri(); ?>/scripts/libs/hero-slider.js"></script>
   <script src="<?php echo get_template_directory_uri(); ?>/scripts/libs/text-animation.js"></script>
   <script src="<?php echo get_template_directory_uri(); ?>/scripts/libs/scroll-btn.js"></script>
