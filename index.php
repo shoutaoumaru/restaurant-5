@@ -170,8 +170,7 @@
       <div class="bg-line"></div>
       <div class="c-container">
         <div class="p-concept__img">
-          <img class="p-concept__img__photo parallax-img" src="<?php echo get_template_directory_uri(); ?>/images/home/pizza@sp.jpg" alt="">
-          <img class="p-concept__img__shadow parallax" src="<?php echo get_template_directory_uri(); ?>/images/home/about_b-shadow.png" alt="">
+          <img class="p-concept__img__photo parallax-down" src="<?php echo get_template_directory_uri(); ?>/images/home/pizza@sp.jpg" alt="">
         </div>
         <div class="p-concept__title item">
           <p>delicious</p>
@@ -194,7 +193,7 @@
         </div>
         <div class="p-story__sub-img appear up">
           <div class="p-story__photo01 item ">
-            <img class="parallax" src="<?php echo get_template_directory_uri(); ?>/images/home/magurodon.jpg" alt="">
+            <img class="parallax-down" src="<?php echo get_template_directory_uri(); ?>/images/home/magurodon.jpg" alt="">
           </div>
           <div class="p-story__photo02 item">
             <img src="<?php echo get_template_directory_uri(); ?>/images/home/yakitori.jpg" alt="">
@@ -220,7 +219,7 @@
         <div class="p-menu__wrap">
           <div class="p-menu__img">
             <div class="p-menu__photo cover-slide">
-              <img class="img-zoom parallax" src="<?php echo get_template_directory_uri(); ?>/images/home/steak_1@pc.jpg" alt="">
+              <img class="img-zoom parallax-down" src="<?php echo get_template_directory_uri(); ?>/images/home/steak_1@pc.jpg" alt="">
             </div>
           </div>
           <div class="p-menu__desc item">
@@ -247,7 +246,7 @@
         <h2 class="p-info__title c-txt-lr clip-js left">information</h2>
         <div class="p-info__img">
           <div class="p-info__photo cover-slide">
-            <img class="img-zoom parallax" src="<?php echo get_template_directory_uri(); ?>/images/home/store_3@pc.jpg" alt="">
+            <img class="img-zoom parallax-down" src="<?php echo get_template_directory_uri(); ?>/images/home/store_3@pc.jpg" alt="">
           </div>
         </div>
         <div class="p-info__desc-wrap appear up">
