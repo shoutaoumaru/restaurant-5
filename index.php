@@ -7,7 +7,7 @@
 
 <body>
   <div class="p-superwrapper">
-    <!-- <div class="svg-animation">
+    <div class="svg-animation">
       <svg id="レイヤー_1" data-name="レイヤー 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 380.06 99.83"
         width="380.05999755859375" height="99.83000183105469">
         <path class="cls-1 svg-elem-1"
@@ -76,7 +76,7 @@
           }
         </style>
       </svg>
-    </div> -->
+    </div>
     <!-- /.svg-animation -->
     <header id="header" class="header">
       <div class="mobile-container">

@@ -18,9 +18,12 @@
   padding: 14vw;
 }
 
-.pace-running .p-superwrapper {
+.p-superwrapper {
   opacity: 0;
-  display: none;
+}
+
+.pace-done .p-superwrapper {
+  opacity: 1;
 }
 
 .pace-done .svg-animation {
