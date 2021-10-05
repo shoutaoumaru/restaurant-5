@@ -853,7 +853,7 @@ a:hover {
   background-position: center;
   background-size: contain;
   background-repeat: no-repeat;
-  margin: 5vw 0 0 5vw;
+  margin: 3vw 0 0 5vw;
   height: 44px;
   width: 115px;
 }
@@ -1103,7 +1103,6 @@ a:hover {
 }
 
 .p-story {
-  padding-bottom: 20vw;
   text-align: center;
 }
 
@@ -1117,7 +1116,7 @@ a:hover {
 
 .p-story__sub-img {
   position: relative;
-  height: 400px;
+  height: 300px;
   margin-top: 20vw;
 }
 
@@ -1524,12 +1523,39 @@ a:hover {
 }
 
 .superwrapper-menu .c-top {
-  margin-top: 30vw;
+  position: relative;
+}
+
+.superwrapper-menu .c-top__img {
+  position: relative;
+}
+
+.superwrapper-menu .c-top__img::before {
+  position: absolute;
+  top: 0;
+  left: 0;
+  content: '';
+  display: block;
+  height: 100%;
+  width: 100%;
+  background-color: #161616;
+  opacity: 0.3;
 }
 
 .superwrapper-menu .c-top__tit {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translateY(-50%) translateX(-50%);
+          transform: translateY(-50%) translateX(-50%);
+  margin: auto;
   padding: 0 0 12vw 0;
   text-align: center;
+  z-index: 100;
+}
+
+.superwrapper-menu .c-top__tit span {
+  color: #fff;
 }
 
 .superwrapper-menu .c-top p {
@@ -2709,6 +2735,17 @@ a:hover {
           transition-delay: 19.5s;
 }
 
+.pdf-link {
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.pdf-link a {
+  border: 1px solid #d8d8d8;
+  padding: 10px 20px;
+  border-radius: 20px;
+}
+
 .tab-group {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -2717,6 +2754,10 @@ a:hover {
       justify-content: space-around;
   padding-bottom: 3vw;
   border-bottom: 1px solid #8f8f8f;
+}
+
+.tab-group .tab {
+  cursor: pointer;
 }
 
 .panel {
@@ -2735,25 +2776,42 @@ a:hover {
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
 .panel-group {
-  padding: 10vw 10vw;
+  padding: 10vw 0vw;
 }
 
-.panel__txt {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
+.name {
+  margin-bottom: 10px;
 }
 
 .panel__item {
-  width: 100%;
+  width: 47%;
   padding: 3vw 0;
+}
+
+.panel__img {
+  margin-bottom: 5px;
+}
+
+@media (min-width: 960px) {
+  .panel__item {
+    width: 30%;
+    padding: 3vw 0;
+  }
+  .panel .name {
+    font-size: 24px;
+  }
+  .panel .price {
+    font-size: 24px;
+  }
+  .panel__img {
+    margin-bottom: 15px;
+  }
 }
 
 @media (min-width: 600px) {
@@ -2914,22 +2972,17 @@ Stylesheet: 600px以上のモニタで適用
   .p-news {
     padding: 40vw 0 10vw 0;
   }
-  .superwrapper-menu .c-top {
-    margin-top: 10vw;
-  }
   .superwrapper-menu .c-top__tit {
     padding: 0 0 5vw 0;
   }
   .superwrapper-menu .c-top__img {
     height: 200px;
-    width: 80%;
-    margin: 0 auto;
   }
   .superwrapper-menu .c-menu {
     padding: 10vw 0;
   }
   .superwrapper-menu .panel-group {
-    padding: 5vw 10vw;
+    padding: 5vw 0;
   }
   .c-news {
     padding-top: 5vw;

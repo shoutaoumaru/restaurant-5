@@ -2,6 +2,7 @@
 body {
   font-family: "Righteous", "Noto Serif JP", cursive;
   text-transform: uppercase;
+
   &.hidden {
     overflow: hidden;
   }
@@ -237,7 +238,7 @@ a:hover {
     background-position: center;
     background-size: contain;
     background-repeat: no-repeat;
-    margin: 5vw 0 0 5vw;
+    margin: 3vw 0 0 5vw;
     height: 44px;
     width: 115px;
   }
@@ -514,7 +515,6 @@ a:hover {
 
 //#story
 .p-story {
-  padding-bottom: 20vw;
   text-align: center;
 
   &__title {
@@ -529,7 +529,7 @@ a:hover {
 
   &__sub-img {
     position: relative;
-    height: 400px;
+    height: 300px;
     margin-top: 20vw;
   }
 
@@ -913,11 +913,38 @@ a:hover {
 //* * * * * * menu-page * * * * * * *
 .superwrapper-menu {
   .c-top {
-    margin-top: 30vw;
+    position: relative;
+
+    &__img {
+      position: relative;
+
+      &::before {
+        position: absolute;
+        top: 0;
+        left: 0;
+        content: '';
+        display: block;
+        height: 100%;
+        width: 100%;
+        background-color: $cBlack;
+        opacity: 0.3;
+      }
+
+    }
 
     &__tit {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translateY(-50%) translateX(-50%);
+      margin: auto;
       padding: 0 0 12vw 0;
       text-align: center;
+      z-index: 100;
+
+      & span {
+        color: $cWhite;
+      }
     }
 
     & p {
