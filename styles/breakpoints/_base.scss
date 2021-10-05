@@ -284,7 +284,7 @@ a:hover {
     background-position: center;
     background-size: contain;
     background-repeat: no-repeat;
-    margin: 5vw 0 0 5vw;
+    margin: 3.4vw 0 0 5vw;
     height: 44px;
     width: 115px;
   }
@@ -1015,20 +1015,45 @@ a:hover {
 //* * * * * * menu-page * * * * * * *
 .superwrapper-menu {
   .c-top {
-    margin-top: 30vw;
+    position: relative;
+    margin-bottom: 50px;
+
+    &__img {
+      position: relative;
+
+      &::before {
+        position: absolute;
+        top: 0;
+        left: 0;
+        content: '';
+        display: block;
+        height: 100%;
+        width: 100%;
+        background-color: $cBlack;
+        opacity: 0.3;
+      }
+
+      @media (min-width:600px) {
+        height: 250px;
+      }
+    }
 
     &__tit {
-      padding: 0 0 12vw 0;
-      text-align: center;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translateY(-50%) translateX(-50%);
+      margin: auto;
+      z-index: 100;
+
+      & span {
+        color: $cWhite;
+      }
     }
 
     & p {
       margin-top: -10px;
     }
-  }
-
-  .c-menu {
-    padding: 20vw 0;
   }
 }
 
